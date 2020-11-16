@@ -17,8 +17,8 @@ public class ChaveValorHandler implements ChaveValor.Iface {
 public boolean setKV(int key, String valor) throws TException {
        
   if (kv.contains(key)) {
-      for (int obj : kv) {
-        if (obj.equals(key)) {
+      for (int elemento : kv) {
+        if (elemento.equals(key)) {
             getKV(key);
             return true;
         }
